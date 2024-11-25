@@ -21,5 +21,8 @@ class DatabaseSeeder extends Seeder
 
         // Call the SizeSeeder
         $this->call(SizeSeeder::class);
+        
+        // call the 
+        $this->call(UnitSeeder::class);
     }
 }
