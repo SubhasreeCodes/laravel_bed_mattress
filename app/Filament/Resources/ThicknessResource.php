@@ -13,6 +13,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
+
 class ThicknessResource extends Resource
 {
     protected static ?string $model = Thickness::class;
@@ -39,11 +40,11 @@ class ThicknessResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('value_in_inches')
+                Tables\Columns\TextInputColumn::make('value_in_inches')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('value_in_feet')
+                Tables\Columns\TextInputColumn::make('value_in_feet')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('value_in_centimeters')
+                Tables\Columns\TextInputColumn::make('value_in_centimeters')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
