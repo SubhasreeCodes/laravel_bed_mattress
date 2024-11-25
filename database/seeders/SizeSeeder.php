@@ -18,8 +18,8 @@ class SizeSeeder extends Seeder
     {
         // Sample data for the "sizes" table
         $sizes = [
-            ['name' => 'Small'],
-            ['name' => 'Large'],
+            ['name' => 'Single'],
+            ['name' => 'Double'],
             ['name' => 'Queen'],
             ['name' => 'King'],
             ['name' => 'Custom'],
