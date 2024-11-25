@@ -22,7 +22,12 @@ class DatabaseSeeder extends Seeder
         // Call the SizeSeeder
         $this->call(SizeSeeder::class);
         
-        // call the 
+        // call the UnitSeeder
         $this->call(UnitSeeder::class);
+
+        // call the ThicknessSeeder
+        $this->call(ThicknessSeeder::class);
+
+        
     }
 }
