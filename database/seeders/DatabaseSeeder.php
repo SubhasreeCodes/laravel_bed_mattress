@@ -32,6 +32,9 @@ class DatabaseSeeder extends Seeder
         // call the ThicknessSeeder
         $this->call(ThicknessSeeder::class);
 
+        // call the Product Seeder
+        $this->call(ProductSeeder::class);
+
         
     }
 }
