@@ -35,6 +35,9 @@ class DatabaseSeeder extends Seeder
         // call the Product Seeder
         $this->call(ProductSeeder::class);
 
+        // call the Product Variant Seeder
+        $this->call(ProductVariantSeeder::class);
+        
         
     }
 }
