@@ -13,7 +13,7 @@ Mattress list
     <form method="GET" action="{{ route('mattresses.index') }}" class="mb-4">
         <div class="row mb-3">
             <div class="col-md-4">
-                <input type="text" name="search" class="form-control" placeholder="Search products..." value="{{ request()->input('search') }}">
+                <input type="text" name="search" class="form-control" placeholder="Search Mattress..." value="{{ request()->input('search') }}">
             </div>
             
             <div class="col-md-4">
@@ -24,7 +24,7 @@ Mattress list
     <div class="row">
         @foreach ($product as $item)
             <div class="col-md-4 mb-4">
-                <a href="/products/{{ $item->id }}">
+                <a href="/mattress/{{ $item->id }}">
                     <div class="card">
                         <img src="#" class="card-img-top" alt="{{ $item->name }}">
                         <div class="card-body">

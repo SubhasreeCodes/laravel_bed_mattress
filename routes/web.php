@@ -19,4 +19,8 @@ Route::get('/', function () {
 
 use App\Http\Controllers\MattressController;
 
+// Mattress List Page
 Route::get('/', [MattressController::class, 'index'])->name('mattresses.index');
+
+// Mattress detail Page
+Route::get('/mattress/{id}', [MattressController::class, 'show'])->name('product.show');
